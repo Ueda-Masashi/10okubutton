@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MkN-HC-asA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--今がチャンス！！-->
+        <scene sceneID="uOU-XT-pEY">
+            <objects>
+                <viewController id="lu8-kn-qWg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lHq-Ww-tcT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vU7-Gd-dLG">
+                                <rect key="frame" x="57" y="406.5" width="300" height="83"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="59"/>
+                                <state key="normal" title="10億ボタン">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tZB-KX-JGr" kind="push" id="nQx-C8-ssn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vU7-Gd-dLG" firstAttribute="centerX" secondItem="lHq-Ww-tcT" secondAttribute="centerX" id="1oB-lR-Jqc"/>
+                            <constraint firstItem="vU7-Gd-dLG" firstAttribute="centerY" secondItem="lHq-Ww-tcT" secondAttribute="centerY" id="fah-U5-cC3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6HM-dm-kJj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="今がチャンス！！" id="FOx-uR-jRw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cr1-jb-Zbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578.26086956521749" y="184.82142857142856"/>
+        </scene>
+        <!--死んでしまった・・・-->
+        <scene sceneID="sxn-gs-IOI">
+            <objects>
+                <viewController id="tZB-KX-JGr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pvu-E6-ZHt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNJ-sn-ncB">
+                                <rect key="frame" x="46" y="412.5" width="322" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="59"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eE-Q9-uJN">
+                                <rect key="frame" x="97" y="523.5" width="220" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="続きはwebで！"/>
+                                <connections>
+                                    <segue destination="TyN-R9-Htf" kind="push" id="pq8-Rk-AfD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nNJ-sn-ncB" firstAttribute="centerY" secondItem="Pvu-E6-ZHt" secondAttribute="centerY" id="6AA-z7-ucF"/>
+                            <constraint firstItem="4eE-Q9-uJN" firstAttribute="centerX" secondItem="Pvu-E6-ZHt" secondAttribute="centerX" id="iSb-MA-Ibp"/>
+                            <constraint firstItem="4eE-Q9-uJN" firstAttribute="top" secondItem="nNJ-sn-ncB" secondAttribute="bottom" constant="40" id="p9v-x8-TnJ"/>
+                            <constraint firstItem="nNJ-sn-ncB" firstAttribute="centerX" secondItem="Pvu-E6-ZHt" secondAttribute="centerX" id="uEr-lb-ZXw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W75-2G-F6o"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="死んでしまった・・・" id="zWG-Bb-llV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwQ-Je-GZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508.6956521739132" y="184.82142857142856"/>
+        </scene>
+        <!--人生の裏ワザップ！-->
+        <scene sceneID="z4y-yN-Xwf">
+            <objects>
+                <viewController id="TyN-R9-Htf" customClass="WebViewController" customModule="returnAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qf-qI-zGF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJK-3y-z4J">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aJK-3y-z4J" firstAttribute="top" secondItem="RKM-px-enN" secondAttribute="top" id="FZ1-Sw-18B"/>
+                            <constraint firstItem="RKM-px-enN" firstAttribute="bottom" secondItem="aJK-3y-z4J" secondAttribute="bottom" id="Gzo-fd-Aeq"/>
+                            <constraint firstItem="RKM-px-enN" firstAttribute="trailing" secondItem="aJK-3y-z4J" secondAttribute="trailing" id="UsK-wc-zkw"/>
+                            <constraint firstItem="aJK-3y-z4J" firstAttribute="leading" secondItem="RKM-px-enN" secondAttribute="leading" id="hkB-zB-pJc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RKM-px-enN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="人生の裏ワザップ！" id="nfI-h2-XRW"/>
+                    <connections>
+                        <outlet property="inputWebView" destination="aJK-3y-z4J" id="a0H-I3-ntB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLe-E6-YaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2399" y="185"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a2V-9m-FkA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MkN-HC-asA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t37-hC-7ve">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lu8-kn-qWg" kind="relationship" relationship="rootViewController" id="CHk-Wa-Y3d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zni-bk-3nN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-331.8840579710145" y="184.82142857142856"/>
+        </scene>
+    </scenes>
+</document>
